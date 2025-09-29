@@ -1,0 +1,23 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    color:rgb(12, 154, 154)
+}
+
+p{
+    color:rgb(40, 40, 155)
+}
+#lorem1{
+    color: rgb(183, 118, 20);
+}
+.mainh1{
+    color: rgb(20, 185, 130);
+}
+.bigger{
+    font-size: 15pt ;
+}
+.diff {
+    font-style: italic;
+}
