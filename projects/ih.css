@@ -1,0 +1,20 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(103, 190, 161);
+    font-size: larger;
+}
+p{
+    color: rgb(0, 63, 103);
+}
+h1{
+    color: rgb(14, 10, 1);
+}
+.subheader{
+    color: darkgreen;
+}
+#q1{
+    color: darkgreen; 
+}
+#q2{
+    color: rgb(0, 63, 103);
+}
