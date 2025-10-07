@@ -1,0 +1,18 @@
+body{
+    
+background:url(greenpatbg.jpg) ;
+color: aliceblue;
+background-color: rgb(1, 113, 87);
+
+}
+header {
+  background-image: url(wave.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.mylist{
+    list-style-image: url(dot.png);
+}
+other{
+   
+}
