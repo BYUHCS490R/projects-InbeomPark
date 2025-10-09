@@ -1,0 +1,14 @@
+body{
+    background: url(Background-image.jpg);
+}
+header{
+  background:url(npl.png) ;
+  background-repeat: no-repeat;
+  background-position:right top;
+}
+.mylist{
+    list-style-image: url(npbullet.png);
+}
+nav a.active{
+    color: blueviolet;
+}
