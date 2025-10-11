@@ -1,0 +1,31 @@
+header{
+    border: thick,dashed,black;
+}
+nav{
+    border: thin, solid,black;
+    padding: 5%;
+    margin: 5%;
+}
+h1{ 
+    margin: 5%;
+    padding:5%;
+     border: thin, solid,black;  
+}
+p{
+  margin: 5%;
+  padding: 5%;
+   border: thin, solid,black;
+}
+footer{
+     margin: 5%;
+  padding: 5%;
+     border: thin, solid,black;
+}
+body{
+   
+     border: thin, solid,black;
+}
+main{
+    
+    border: thin, solid,black;
+}
