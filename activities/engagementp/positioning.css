@@ -1,0 +1,14 @@
+.Desert{
+    border: thin, black, solid;
+    float: right;
+}
+.hammer{
+    float: none;
+    position: relative;
+    bottom: -16px;
+    margin: 0%;
+    right: -110px;
+}
+div{
+    clear: right;
+}
