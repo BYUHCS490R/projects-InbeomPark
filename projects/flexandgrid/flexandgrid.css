@@ -1,0 +1,33 @@
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aquamarine; 
+}
+nav a {
+  display: block;
+}
+.sidebar{
+    display: flex;
+    height: max-content;
+}
+.content{
+    
+    width: 200px;
+}
+main{
+    display: flex;
+}
+aside {
+  width: 25%;
+ background-color:antiquewhite;
+}
+.main{
+    display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+}
