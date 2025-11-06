@@ -1,0 +1,39 @@
+
+aside {
+  width: 25%;
+ background-color:antiquewhite;
+}
+.sidebar{
+    display: flex;
+    height: max-content;
+}
+main{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.roster{
+    border: thin solid black;
+    margin: 10px;
+    border-spacing: 5px;
+    border-collapse: separate;
+    caption-side: bottom;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(9, 0, 0);
+    
+}
+tbody th,tbody td{
+    border: thin solid black;
+    padding: 5px;
+}
+ tr:nth-child(even) {
+    background-color: gold;
+}
+ tbody tr:nth-child(odd) {
+    background-color: #d80303f3;
+}
+thead{
+    background-color: rgb(34, 1, 8);
+    color: white;
+}
+
