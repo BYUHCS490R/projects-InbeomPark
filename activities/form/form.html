@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Web Desgin</h1>
+        <nav>link link</nav>
+    </header>
+    
+    <main>
+        <h1>Forms</h1>
+        <form action="formprocess.html" method="post">
+            <div>
+                    <label for="form">Full Name</label>
+                    <input type="text" placeholder="name" id="name">
+            </div>
+            <div>
+                    <label for="form">Email</label>
+                    <input type="email" placeholder="bob@email.com" id="email">
+            </div>
+             <div>
+                    <label for="form">Password</label>
+                    <input type="password" name="pass" id="pass">
+            </div>
+            <div>
+                <label for="States">State</label>
+                <select name="State">
+                    <option></option>
+                    <option value="HI">Hawai</option>
+                    <option value="CA">California</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div>
+                <label><input type="checkbox"> I agree to the terms and conditions
+                </label>
+            </div>
+            <div>
+                <label for="form"> Gender
+                    <input type="radio" name="male"> Male
+                    <input type="radio" name="female"> Female
+                </label>
+            </div>
+            <div>
+                <label for="comment">Comment
+                    <textarea name="comment" id="comment">Hello</textarea>
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Sign Up">
+            </div>
+           
+        </form>
+        <h2>Questions</h2>
+        <ul>
+            <li>The action is like the href</li>
+            <li>The method is for choosing between dialog, post, and get.</li>
+            <li>Post is for change where you can add, update, and remove data. Get is for just for reading data.</li>
+        </ul>
+    </main>
+
+    <footer> &copy; 2025 Inbeom Park</footer>
+</body>
+</html>
