@@ -1,0 +1,29 @@
+form{
+background-color: blanchedalmond;
+padding: 10px;
+}
+.form_row{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+.form_row label{
+    width: 150px;
+    text-align: right;
+}
+.spacer{
+    width: 150px;
+}
+
+.check_row{
+  display: flex;
+  gap: 10px;
+}
+@media only screen and (max-width:500px) {
+    .form_row .check_row{
+        flex-direction: column;
+        text-align: left;
+    }
+}

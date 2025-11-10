@@ -14,20 +14,22 @@
     
     <main>
         <h1>Forms</h1>
+        <fieldset>
+        <legend>Signup</legend>
         <form action="formprocess.html" method="post">
-            <div>
+            <div class="form_row">
                     <label for="form">Full Name</label>
                     <input type="text" placeholder="name" id="name">
             </div>
-            <div>
+            <div class="form_row">
                     <label for="form">Email</label>
                     <input type="email" placeholder="bob@email.com" id="email">
             </div>
-             <div>
+             <div class="form_row">
                     <label for="form">Password</label>
                     <input type="password" name="pass" id="pass">
             </div>
-            <div>
+            <div class="form_row">
                 <label for="States">State</label>
                 <select name="State">
                     <option></option>
@@ -36,24 +38,25 @@
                     <option value="UT">Utah</option>
                 </select>
             </div>
-            <div>
+             <div class="check_row">
+                <div class="spacer"></div>
                 <label><input type="checkbox"> I agree to the terms and conditions
-                </label>
             </div>
-            <div>
-                <label for="form"> Gender
+            <div class="form_row">
+                <label for="form"> Gender</label>
                     <input type="radio" name="male"> Male
                     <input type="radio" name="female"> Female
-                </label>
             </div>
-            <div>
-                <label for="comment">Comment
+            <div class="form_row">
+                <label for="comment"> Comment</label>
                     <textarea name="comment" id="comment">Hello</textarea>
-                </label>
+                
             </div>
-            <div>
+            <div class="form_row">
+                <label></label>
                 <input type="submit" value="Sign Up">
             </div>
+            </fieldset>
            
         </form>
         <h2>Questions</h2>
@@ -61,6 +64,11 @@
             <li>The action is like the href</li>
             <li>The method is for choosing between dialog, post, and get.</li>
             <li>Post is for change where you can add, update, and remove data. Get is for just for reading data.</li>
+        </ul>
+        <h2>Question Part 2</h2>
+        <ul>
+            <li>Alignment, spacing, fonts, colors</li>
+            <li>It makes it so that the form can look good no matter the screen size.</li>
         </ul>
     </main>
 
