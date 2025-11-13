@@ -1,0 +1,85 @@
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(12, 174, 120);
+    font-size: larger;
+}
+footer{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(184, 129, 236);
+    font-size: large;
+}
+form{
+background-color: rgb(103, 177, 192);
+padding: 10px;
+border-radius: 6px;
+}
+.form_row{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+.form_row label{
+    width: 150px;
+    text-align: right;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select,
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff9f1;
+}
+.spacer{
+    width: 150px;
+}
+fieldset {
+  border: 2px solid rgb(5, 114, 78);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: larger;
+  color: rgb(2, 32, 22);
+}
+
+input[type="submit"] {
+  background-color: rgb(12, 174, 120);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.check_row {
+  display: flex;
+  gap: 10px;
+}
+.gender_options {
+  align-items: center;
+}
+ 
+@media only screen and (max-width: 500px) {
+  .form_row, .check_row, .gender_options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form_row label {
+    text-align: left;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+  }
+}
