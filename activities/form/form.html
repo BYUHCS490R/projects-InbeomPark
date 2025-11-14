@@ -6,6 +6,7 @@
     <title>Form</title>
     <link rel="stylesheet" href="form.css">
 </head>
+
 <body>
     <header>
         <h1>Web Desgin</h1>
@@ -14,9 +15,9 @@
     
     <main>
         <h1>Forms</h1>
-        <fieldset>
-        <legend>Signup</legend>
-        <form action="formprocess.html" method="post">
+        <form action="formprocess.html" method="post" id="myForm">
+            <fieldset>
+                 <legend>Signup</legend>
             <div class="form_row">
                     <label for="form">Full Name</label>
                     <input type="text" placeholder="name" id="name">
@@ -54,10 +55,9 @@
             </div>
             <div class="form_row">
                 <label></label>
-                <input type="submit" value="Sign Up">
+                <input type="submit" value="Sign Up" id="submit">
             </div>
             </fieldset>
-           
         </form>
         <h2>Questions</h2>
         <ul>
@@ -70,8 +70,28 @@
             <li>Alignment, spacing, fonts, colors</li>
             <li>It makes it so that the form can look good no matter the screen size.</li>
         </ul>
+         <h2>Question Part 3</h2>
+        <ul>
+            <li>It is a programing language and got its name from Netscape and Sun Micsrosystems</li>
+            <li>Dom which means running it in a web browser/html page and node.js</li>
+            <li>jQuery</li>
+            <li>React</li>
+        </ul>
     </main>
 
     <footer> &copy; 2025 Inbeom Park</footer>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit",function(event){
+        event.preventDefault();
+
+        if (!name || !email) {
+            alert("You need to enter a name and email.");
+            return;
+        };
+        alert("Form Submitted");})
+        
+    </script>
+
 </body>
 </html>
