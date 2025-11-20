@@ -13,7 +13,8 @@
     </header>
     
     <main>
-        <form action="formprocess.html" method="post">
+        <div id="responseMessage"></div>
+        <form id="signupForm" method="post">
             <fieldset>
                 <legend>Signup</legend>
             <div class="form_row">
@@ -36,7 +37,7 @@
             <div class="form_row">
                     <label for="state">State</label>
                     <select id="state" name="state">
-                        <option value=""></option>
+                        <option value="">Select</option>
                         <option value="HI">Hawaii</option>
                         <option value="CA">California</option>
                         <option value="UT">Utah</option>
@@ -66,9 +67,11 @@
             </div>
             </fieldset>
         </form>
-      
     </main>
 
     <footer>&copy; 2025 Inbeom Park</footer>
+
+    <script src="form.js"></script>
+
 </body>
 </html>
