@@ -1,0 +1,179 @@
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: gold; 
+    padding: 10px;
+}
+nav a{
+  display: block;
+  color: black;
+}
+nav a.active{
+    color: bisque;
+}
+header{
+    background-color: rgb(153, 0, 0);
+    color: rgb(12, 12, 13);
+}
+header h1{
+    text-align: center;
+}
+h1{
+    margin: 0%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font: 1em sans-serif;
+    font-size:larger;
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+}
+main{
+    flex: 1;
+}
+.pic1{
+    width: 350px;
+    
+}
+.pic2{
+    width: 100px;
+}
+
+.i{
+    font-style: italic;
+}
+.container{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+
+}
+form{
+background-color:rgb(248, 210, 152);
+padding: 10px;
+border-radius: 6px;
+}
+.form_row{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+.form_row label{
+    width: 150px;
+    text-align: right;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select,
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff9f1;
+}
+.spacer{
+    width: 150px;
+}
+fieldset {
+  border: 2px solid rgb(174, 5, 5);
+  border-radius: 8px;
+  padding: 20px;
+}
+.gal{
+    display: flex;
+    justify-content: center;
+    
+}
+
+legend {
+  font-weight: bold;
+  font-size: larger;
+  color: rgb(2, 32, 22);
+}
+
+input[type="submit"] {
+  background-color: rgb(218, 13, 13);
+  color: rgb(250, 247, 247);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.check_row {
+  display: flex;
+  gap: 10px;
+}
+
+.schedule{
+    border: thin solid black;
+    margin: 10px;
+    border-spacing: 5px;
+    border-collapse: separate;
+    caption-side: bottom;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(18, 12, 9);
+    
+}
+tbody th,tbody td{
+    border: thin solid rgb(7, 0, 0);
+    padding: 5px;
+}
+ td:nth-child(even) {
+    background-color: gold;
+}
+ tbody td:nth-child(odd) {
+    background-color: #ed2d2df3;
+}
+thead{
+    background-color: rgb(12, 11, 1);
+    color: white;
+}
+.tleft{
+    color: rgb(240, 255, 255);
+    background-color: rgb(179, 28, 28);
+}
+ 
+.center{
+    text-align: center;
+}
+@media only screen and (max-width: 500px) {
+  .form_row, .check_row, .gender_options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form_row label {
+    text-align: left;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+  }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    flex-direction: column;
+  }
+  .gal{
+    display: grid;
+    grid-row: 3;
+  }
+}
