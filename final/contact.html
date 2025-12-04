@@ -15,11 +15,12 @@
             <a href="aboutus.html">About Us</a>
             <a href="locations.html">Locations</a>
             <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.html"  class="active">Contact Us</a>
         </nav>
     </header>
 
     <main>
+        <h1 class="center">Contact Us</h1>
         <div id="responseMessage"></div>
         <form id="signupForm" method="post">
             <fieldset>
@@ -45,20 +46,14 @@
                     <input type="text" id="location" name="location" placeholder="Type here">
             </div>
             <div class="form_row">
-                    <label for="state">Time</label>
-                    <select id="state" name="state">
+                    <label for="time">Time</label>
+                    <select id="time" name="state">
                         <option value="">Select</option>
                         <option value="1">1 hour</option>
                         <option value="2">2 hours</option>
                         <option value="3">3 hours</option>
                         <option value="4">4+ hours</option>
                     </select>
-            </div>
-
-              <div class="check_row">
-                <div class="spacer"></div>
-                <input type="checkbox" id="terms" name="terms">
-                <label for="terms">I agree to the terms and conditions</label>
             </div>
             <div class="form_row">
                  <label for="comment">Additional Instructions/Info</label>
@@ -75,7 +70,7 @@
     
 
     <script src="final.js"></script>
-    </body>
+   
 
     <footer> &copy;Inbeom Park 2025</footer>
     

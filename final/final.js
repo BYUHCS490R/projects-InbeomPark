@@ -9,8 +9,12 @@ function processForm(event) {
         email: document.getElementById("email").value.trim(),
 
         phone: document.getElementById("phone").value.trim(),
-        
-        terms: document.getElementById("terms").checked,
+
+        count: document.getElementById("count").value.trim(),
+
+        location: document.getElementById("location").value.trim(),
+
+        time: document.getElementById("time").value.trim(),
 
         comment: document.getElementById("comment").value.trim()
     };
@@ -31,10 +35,6 @@ function processForm(event) {
         return;
 
 
-    }
-    if (!data.terms) {
-        alert("You must agree to the terms.");
-        return;
     }
   
     const xhr = new XMLHttpRequest();

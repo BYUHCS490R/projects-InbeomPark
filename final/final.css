@@ -4,17 +4,30 @@ nav{
     justify-content: space-evenly;
     background-color: gold; 
     padding: 10px;
+    
 }
 nav a{
   display: block;
   color: black;
+  padding: 5px 10px;
+  border-radius: 0;
 }
-nav a:active{
-    color: bisque;
+nav a:hover {
+  color: white;
+  background-color: rgb(153, 0, 0);
+  padding: 5px 10px;
+  border-radius: 5px;
 }
+nav a.active {
+  background-color: rgb(153, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
 header{
     background-color: rgb(153, 0, 0);
-    color: rgb(12, 12, 13);
+    color: white;
 }
 header h1{
     text-align: center;
@@ -25,36 +38,80 @@ h1{
 body{
     display: flex;
     flex-direction: column;
-    font: 1em sans-serif;
-    font-size:larger;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
     background-color: bisque;
     margin: 0;
     padding: 0;
 }
 main{
     flex: 1;
+     padding: 20px;
+  max-width: 1100px;
+  margin: auto;
 }
-.pic1{
-    width: 350px;
-    
-}
-.pic2{
-    width: 100px;
+
+.center img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px; 
 }
 
 .i{
     font-style: italic;
 }
 .container{
-    display: flex;
-    gap: 100px;
-    justify-content: center;
+   text-align: center;
+  padding: 40px 0;
+}
+.container .headline {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
 
+.about-paksu {
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 0 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+.cta {
+  text-align: center;
+  margin: 40px 0;
+}
+.btn {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 25px;
+  background-color: rgb(153, 0, 0);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #a60000;
+}
+.tagline {
+  font-size: 1.4rem;
+ 
+  color: #333;
+margin: 5px 0 5px 0; 
+}
+.lmenu{
+    font-size: larger;
 }
 form{
 background-color:rgb(248, 210, 152);
-padding: 10px;
-border-radius: 6px;
+border-radius: 8px;
+ max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+form, .schedule {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 .form_row{
     display: flex;
@@ -75,7 +132,7 @@ select,
 textarea {
   padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
   background-color: #fff9f1;
 }
 .spacer{
@@ -86,31 +143,56 @@ fieldset {
   border-radius: 8px;
   padding: 20px;
 }
-.gal{
-    display: flex;
-    justify-content: center;
-    
+.gal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+    padding: 20px 0;
 }
-
+.gal figure {
+    margin: 0;
+    text-align: center;
+    padding: 15px;
+}
+.gal img {
+    width: 300px;      
+    height: 250px;
+    border-radius: 6px;
+    object-fit: cover; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+figcaption{
+    font-size: 10px;
+}
 legend {
   font-weight: bold;
   font-size: larger;
   color: rgb(2, 32, 22);
 }
-
+html, body {
+    height: 100%;
+}
 input[type="submit"] {
   background-color: rgb(218, 13, 13);
   color: rgb(250, 247, 247);
   border: none;
   padding: 10px 20px;
-  border-radius: 6px;
+  border-radius: 8px;
 }
-
+.center img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px; 
+}
 .check_row {
   display: flex;
   gap: 10px;
 }
-
+.menu{
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 .schedule{
     border: thin solid black;
     margin: 10px;
@@ -120,29 +202,71 @@ input[type="submit"] {
     width: 80%;
     margin: auto;
     background-color: rgb(18, 12, 9);
+    border-radius: 8px;
+    overflow: hidden;
     
 }
 tbody th,tbody td{
     border: thin solid rgb(7, 0, 0);
     padding: 5px;
 }
+tbody tr td:first-child,
+tbody tr th:first-child {
+    background-color: rgb(153, 0, 0);
+    color: white;
+    font-weight: bold;
+}
  td:nth-child(even) {
     background-color: gold;
 }
  tbody td:nth-child(odd) {
-    background-color: #ed2d2df3;
+    background-color:bisque;
+    color: #121212;
 }
 thead{
-    background-color: rgb(12, 11, 1);
+    background-color: rgb(153, 0, 0);
     color: white;
 }
-.tleft{
-    color: rgb(240, 255, 255);
-    background-color: rgb(179, 28, 28);
+
+thead th {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+tbody td {
+  padding: 10px;
 }
  
 .center{
     text-align: center;
+}
+.pic2 img {
+  width: 200px; 
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+}
+.video-section {
+    text-align: center;
+     margin: 15px 0 35px 0;
+}
+
+.video-section p {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+.video-section iframe {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 6px;
+}
+footer {
+  background-color: rgb(153, 0, 0);
+  color: white;
+  padding: 15px;
+  text-align: center;
 }
 @media only screen and (max-width: 500px) {
   .form_row, .check_row, .gender_options {
@@ -160,11 +284,13 @@ thead{
     padding: 15px;
     font-size: 1.1em;
   }
-}
-
-
-
-@media only screen and (max-width: 500px) {
+    nav a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
   nav {
     flex-direction: column;
     align-items: center;
@@ -172,8 +298,14 @@ thead{
   main {
     flex-direction: column;
   }
-  .gal{
-    display: grid;
-    grid-row: 3;
-  }
+  
+   .gal {
+        grid-template-columns: 1fr; 
+    }
+        .cta button,
+    .cta a {
+        margin: 10px 0;        
+        width: 90%;           
+        max-width: 300px;     
+    }
 }
