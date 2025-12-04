@@ -268,7 +268,7 @@ footer {
   padding: 15px;
   text-align: center;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .form_row, .check_row, .gender_options {
     flex-direction: column;
     align-items: flex-start;
@@ -308,4 +308,40 @@ footer {
         width: 90%;           
         max-width: 300px;     
     }
+      .schedule,
+  .schedule thead,
+  .schedule tbody,
+  .schedule th,
+  .schedule td,
+  .schedule tr {
+    display: block;
+  }
+
+  .schedule thead tr {
+    display: none; 
+  }
+
+  .schedule tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: bisque;
+  }
+
+  .schedule td {
+    text-align: left;
+    padding: 10px 10px 10px 45%;
+    border: none;
+    position: relative;
+  }
+
+  .schedule td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
 }
